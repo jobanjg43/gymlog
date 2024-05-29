@@ -1,0 +1,141 @@
+.hero
+{
+    width: calc(100vw - 3px);
+    height: calc(100vh - 3px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow:-moz-hidden-unscrollable;
+    
+}
+.hero_content{
+    margin-left: 16px;
+}
+.hero_image
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+    
+
+.hero > .hero_content>.hero_text
+{
+    width: calc(100dvw - 4px);
+    height: 35%;
+    position:absolute;
+    bottom: 0px;
+    z-index: 2;
+    
+}
+.hero > .hero_text>h1{
+    color: rgba(255, 255, 255, 0.9);
+}
+/* .hero>.hero_bg_div
+{
+   
+    visibility: show;
+
+} */
+.hero_button_primary
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 100px;
+    background-color: rgb(255, 60, 0);
+    width: 25%;
+    height: 5%;
+    border: 0;
+    border-radius: 4px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(255, 255, 255, 0.02),
+        6.7px 6.7px 5.3px rgba(255, 255, 255, 0.028),
+        12.5px 12.5px 10px rgba(255, 255, 255, 0.035),
+        22.3px 22.3px 17.9px rgba(255, 255, 255, 0.042),
+        41.8px 41.8px 33.4px rgba(255, 255, 255, 0.05),
+        100px 100px 80px rgba(255, 255, 255, 0.07)
+        ;
+    
+}
+.hero_button_primary:hover
+{
+    /* transform: scale(1.1); */
+    animation: buttonGrow 0.2s 1 forwards ;
+}
+.hero_button_secondary
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 100px;
+    left: 30%;
+    background-color: rgb(46, 46, 46);
+    width: 25%;
+    height: 5%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    
+    
+    
+}
+.hero_button_secondary>span{
+    color: rgba(227, 231, 236, 0.9);
+}
+
+@keyframes buttonGrow {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);
+        /* box-shadow: 1px 1px 5px white, 1px 1px 1px orange; */
+        
+    }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .hero_image{
+    background-image: url("../assets/img/hero_Mobile.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    }
+    .hero_bg_div
+    {
+        visibility: visible;
+        width: 150%;
+        height: 35%;
+        background-color: rgb(46, 46, 46);
+        position: absolute;
+        top:550px;
+        left: -80px;
+        z-index:1;
+        transform: scaleX(-10);
+        transform: rotate(-10deg);
+        opacity: 0.6;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .hero_image{
+        background-image: url("../assets/img/hero_man_sitting_desktop.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        }
+        .hero_bg_div
+        {
+            visibility: hidden;
+        }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 

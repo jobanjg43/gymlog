@@ -1,0 +1,17 @@
+*
+{
+    font-family: "Roboto", sans-serif;
+    color: rgb(240, 240, 240);
+}
+h1
+{
+    font-family: "Open Sans", sans-serif;
+}
+.txt_lg
+{
+    font-size: large;
+}
+.txt_bold
+{
+    font-weight: bold;
+}
