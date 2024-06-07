@@ -1,6 +1,57 @@
+.login-body
+{
+    margin: 0;
+    padding: 0;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .loginBG
 {
     background-image: url(../assets/img/loginBG.jpg);
     width: 100vw;
     height: 100vh;
+    position:absolute;
+    filter: blur(3px);
+
 }
+.login-card
+{
+    position: relative;
+    background-color: rgba(32, 32, 32,0.7);
+    min-width: 200px;
+    width: 40%;
+    max-width: 350px;
+    min-height: 200px;
+    height: 30%;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+.login-form-top
+{
+    position: relative;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+.login-form-top>svg
+{
+    
+    width: 50%;
+    height: 50%;
+}
+.login-card > form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+/* .login-card>form>input{
+    height: 3vh;
+} */

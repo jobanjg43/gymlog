@@ -6,3 +6,27 @@ body
     block-size: auto;
 
 }
+input[type=text] , [type=password]
+{
+    background-color: #252525;
+    border:0.1px solid rgb(167, 164, 164);
+    border-radius: 3px;
+    padding-left: 5%;
+    font-size: 0.7rem;
+}
+input:focus
+{
+    outline: 1px solid rgb(255, 60, 0);
+    border: none;
+	
+}
+
+/* horizonal line  */
+.hr
+{
+    height: 1px;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
